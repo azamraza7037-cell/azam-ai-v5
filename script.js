@@ -323,3 +323,42 @@ magneticButtons.forEach(button => {
     });
 
 });
+/*=========================
+MOUSE GLOW
+=========================*/
+
+const mouseGlow = document.querySelector(".mouse-glow");
+
+if(mouseGlow){
+
+let glowX = window.innerWidth / 2;
+let glowY = window.innerHeight / 2;
+
+window.addEventListener("mousemove",(e)=>{
+
+glowX = e.clientX;
+glowY = e.clientY;
+
+});
+
+function animateGlow(){
+
+gsap.to(mouseGlow,{
+
+x:glowX,
+
+y:glowY,
+
+duration:.6,
+
+ease:"power2.out"
+
+});
+
+requestAnimationFrame(animateGlow);
+
+}
+
+animateGlow();
+
+}
