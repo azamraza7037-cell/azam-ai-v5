@@ -797,3 +797,160 @@ font-size:40px;
 }
 
 }
+/*=========================
+AI DASHBOARD
+=========================*/
+
+.dashboard{
+
+padding:150px 0;
+
+}
+
+.dashboard-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.dashboard-left span{
+
+color:#00E5FF;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.dashboard-left h2{
+
+font-size:56px;
+
+margin:20px 0;
+
+}
+
+.dashboard-left p{
+
+color:#94A3B8;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.dashboard-list{
+
+list-style:none;
+
+display:grid;
+
+gap:18px;
+
+}
+
+.dashboard-list li{
+
+color:#dbe4f1;
+
+}
+
+.dashboard-right{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.dashboard-row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:20px;
+
+}
+
+.dashboard-card{
+
+padding:35px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+transition:.4s;
+
+}
+
+.dashboard-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#00E5FF;
+
+box-shadow:0 25px 60px rgba(0,229,255,.15);
+
+}
+
+.dashboard-card h1{
+
+font-size:58px;
+
+margin:18px 0;
+
+color:#00E5FF;
+
+}
+
+.dashboard-card h2{
+
+font-size:36px;
+
+color:#fff;
+
+}
+
+.dashboard-card p{
+
+color:#94A3B8;
+
+}
+
+@media(max-width:992px){
+
+.dashboard-container{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-row{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-left h2{
+
+font-size:40px;
+
+}
+
+}
