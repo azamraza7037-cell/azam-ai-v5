@@ -401,3 +401,28 @@ right:-100px;
 bottom:-100px;
 
 }
+/*======================================
+ HERO GRID BACKGROUND
+======================================*/
+
+.hero-grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+
+background-size:60px 60px;
+
+mask-image:radial-gradient(circle at center,black 35%,transparent 90%);
+
+opacity:.35;
+
+z-index:0;
+
+}
