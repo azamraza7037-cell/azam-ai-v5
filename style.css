@@ -37,12 +37,15 @@ scroll-behavior:smooth;
 
 body{
 
-background:#050816;
+font-family:"Inter",sans-serif;
 
-font-family:Inter,sans-serif;
+background:
+radial-gradient(circle at top,#111B44 0%,#050816 60%);
 
 color:#fff;
 
 overflow-x:hidden;
+
+min-height:100vh;
 
 }
