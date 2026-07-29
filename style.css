@@ -2302,3 +2302,14 @@ cursor:none;
 }
 
 }
+/*=========================
+MAGNETIC BUTTONS
+=========================*/
+
+.btn{
+
+will-change:transform;
+
+transform-style:preserve-3d;
+
+}
