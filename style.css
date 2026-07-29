@@ -252,3 +252,60 @@ text-decoration:none;
 transform:translateY(-2px);
 
 }
+/* ===== TRUST BAR ===== */
+
+.trusted-by{
+
+margin-top:80px;
+
+text-align:center;
+
+}
+
+.trusted-by p{
+
+color:#7c8aa5;
+
+font-size:15px;
+
+margin-bottom:25px;
+
+letter-spacing:1px;
+
+}
+
+.brand-row{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:45px;
+
+}
+
+.brand-row span{
+
+font-size:18px;
+
+font-weight:700;
+
+color:#b8c4d9;
+
+opacity:.75;
+
+transition:.35s;
+
+}
+
+.brand-row span:hover{
+
+color:#00E5FF;
+
+opacity:1;
+
+transform:translateY(-4px);
+
+}
