@@ -218,3 +218,69 @@ start:"top 85%"
 });
 
 });
+/*=========================
+CUSTOM CURSOR
+=========================*/
+
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+if(dot && ring && window.innerWidth > 991){
+
+window.addEventListener("mousemove",(e)=>{
+
+dot.style.left=e.clientX+"px";
+dot.style.top=e.clientY+"px";
+
+ring.style.left=e.clientX+"px";
+ring.style.top=e.clientY+"px";
+
+});
+
+document.querySelectorAll("a,button,.btn").forEach(el=>{
+
+el.addEventListener("mouseenter",()=>{
+
+ring.classList.add("active");
+
+});
+
+el.addEventListener("mouseleave",()=>{
+
+ring.classList.remove("active");
+
+});
+
+});
+
+}
+let mouseX=0;
+let mouseY=0;
+
+let ringX=0;
+let ringY=0;
+
+window.addEventListener("mousemove",(e)=>{
+
+mouseX=e.clientX;
+mouseY=e.clientY;
+
+});
+
+function animateCursor(){
+
+ringX+=(mouseX-ringX)*0.15;
+ringY+=(mouseY-ringY)*0.15;
+
+ring.style.left=ringX+"px";
+ring.style.top=ringY+"px";
+
+requestAnimationFrame(animateCursor);
+
+}
+
+if(ring){
+
+animateCursor();
+
+}
