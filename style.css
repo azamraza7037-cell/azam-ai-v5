@@ -93,11 +93,39 @@ min-height:100vh;
 }
 
 .hero h1 span{
-    background:linear-gradient(90deg,#00E5FF,#7B61FF);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+
+background:linear-gradient(
+90deg,
+#00E5FF,
+#7B61FF,
+#00E5FF
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:textGradient 5s linear infinite;
+
 }
 
+@keyframes textGradient{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
 .hero p{
     max-width:620px;
     color:var(--text2);
