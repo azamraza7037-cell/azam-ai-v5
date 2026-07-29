@@ -374,3 +374,38 @@ animation-delay:1s;
 animation-delay:2s;
 
 }
+/* ===============================
+   AURORA
+================================= */
+
+@keyframes aurora{
+
+0%{
+
+transform:translateX(-5%) translateY(-5%) scale(1);
+
+}
+
+50%{
+
+transform:translateX(5%) translateY(5%) scale(1.15);
+
+}
+
+100%{
+
+transform:translateX(-5%) translateY(-5%) scale(1);
+
+}
+
+}
+
+.hero-aurora{
+
+animation:aurora 12s ease-in-out infinite;
+
+filter:blur(40px);
+
+opacity:.8;
+
+}
