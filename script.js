@@ -74,3 +74,26 @@ faqItems.forEach(item => {
     });
 
 });
+/*=========================
+BACK TO TOP
+=========================*/
+
+const backTop = document.querySelector(".back-top");
+
+if(backTop){
+
+backTop.addEventListener("click",e=>{
+
+e.preventDefault();
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+}
