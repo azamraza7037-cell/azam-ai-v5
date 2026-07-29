@@ -426,3 +426,34 @@ opacity:.35;
 z-index:0;
 
 }
+/*======================================
+ HERO ANIMATION
+======================================*/
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.robot-circle{
+
+animation:float 5s ease-in-out infinite;
+
+}
