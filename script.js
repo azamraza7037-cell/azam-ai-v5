@@ -284,3 +284,42 @@ if(ring){
 animateCursor();
 
 }
+/*=========================
+MAGNETIC BUTTONS
+=========================*/
+
+const magneticButtons = document.querySelectorAll(".btn");
+
+magneticButtons.forEach(button => {
+
+    button.addEventListener("mousemove", (e) => {
+
+        const rect = button.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const moveX = (x - rect.width / 2) * 0.25;
+        const moveY = (y - rect.height / 2) * 0.25;
+
+        gsap.to(button, {
+            x: moveX,
+            y: moveY,
+            duration: 0.3,
+            ease: "power2.out"
+        });
+
+    });
+
+    button.addEventListener("mouseleave", () => {
+
+        gsap.to(button, {
+            x: 0,
+            y: 0,
+            duration: 0.5,
+            ease: "elastic.out(1,0.4)"
+        });
+
+    });
+
+});
