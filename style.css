@@ -1,3 +1,7 @@
+/* ===================================
+   AZAM AI v6
+=================================== */
+
 :root{
 
 --bg:#050816;
@@ -10,7 +14,6 @@
 --text2:#94A3B8;
 
 --glass:rgba(255,255,255,.05);
-
 --border:rgba(255,255,255,.08);
 
 --radius:24px;
@@ -18,13 +21,7 @@
 --container:1280px;
 
 }
-.container{
 
-width:min(92%,1280px);
-
-margin:auto;
-
-}
 *{
 margin:0;
 padding:0;
@@ -37,403 +34,36 @@ scroll-behavior:smooth;
 
 body{
 
-font-family:"Inter",sans-serif;
+font-family:'Inter',sans-serif;
 
-background:
-radial-gradient(circle at top,#111B44 0%,#050816 60%);
+background:linear-gradient(180deg,var(--bg),var(--bg2));
 
-color:#fff;
+color:var(--text);
 
 overflow-x:hidden;
 
-min-height:100vh;
-
-}
-/* ===============================
-   HERO SECTION
-================================= */
-
-.hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-    padding:120px 0;
 }
 
-.hero-wrapper{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    gap:80px;
-}
+img{
 
-.hero-left{
-    z-index:2;
-}
+max-width:100%;
 
-.hero-tag{
-    display:inline-block;
-    padding:10px 20px;
-    border:1px solid rgba(255,255,255,.12);
-    background:rgba(255,255,255,.04);
-    border-radius:999px;
-    color:#00E5FF;
-    font-size:.9rem;
-    letter-spacing:1px;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:72px;
-    font-weight:900;
-    line-height:1.05;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-
-background:linear-gradient(
-90deg,
-#00E5FF,
-#7B61FF,
-#00E5FF
-);
-
-background-size:300%;
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
-animation:textGradient 5s linear infinite;
+display:block;
 
 }
 
-@keyframes textGradient{
+a{
 
-0%{
+text-decoration:none;
 
-background-position:0%;
-
-}
-
-100%{
-
-background-position:300%;
+color:inherit;
 
 }
 
-}
-.hero p{
-    max-width:620px;
-    color:var(--text2);
-    line-height:1.8;
-    font-size:18px;
-    margin-bottom:40px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:18px;
-    margin-bottom:50px;
-}
-
-.btn-primary,
-.btn-secondary{
-    padding:16px 32px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.35s;
-}
-
-.btn-primary{
-    background:linear-gradient(135deg,#00E5FF,#0077FF);
-    color:#fff;
-    box-shadow:0 20px 45px rgba(0,229,255,.25);
-}
-
-.btn-primary:hover{
-    transform:translateY(-5px);
-}
-
-.btn-secondary{
-    border:1px solid rgba(255,255,255,.15);
-    color:#fff;
-    background:rgba(255,255,255,.04);
-}
-
-.btn-secondary:hover{
-    background:rgba(255,255,255,.08);
-}
-
-.hero-stats{
-    display:flex;
-    gap:25px;
-}
-
-.hero-stats div{
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    padding:22px;
-    border-radius:20px;
-   /* ================= NAVBAR ================= */
-
-.navbar{
-
-position:fixed;
-
-top:20px;
-
-left:50%;
-
-transform:translateX(-50%);
+.container{
 
 width:min(92%,1280px);
 
-z-index:999;
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(20px);
-
-border:1px solid rgba(255,255,255,.08);
-
-border-radius:18px;
-
-padding:16px 28px;
-
-}
-
-.nav-wrapper{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-}
-
-.logo{
-
-font-size:1.4rem;
-
-font-weight:800;
-
-color:#fff;
-
-text-decoration:none;
-
-}
-
-.logo span{
-
-color:#00E5FF;
-
-}
-
-.nav-links{
-
-display:flex;
-
-gap:35px;
-
-}
-
-.nav-links a{
-
-text-decoration:none;
-
-color:#cbd5e1;
-
-transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-color:#00E5FF;
-
-}
-
-.nav-btn{
-
-padding:12px 24px;
-
-background:linear-gradient(135deg,#00E5FF,#0077FF);
-
-border-radius:12px;
-
-color:#fff;
-
-font-weight:700;
-
-text-decoration:none;
-
-}
-
-.nav-btn:hover{
-
-transform:translateY(-2px);
-
-}
-/* ===== TRUST BAR ===== */
-
-.trusted-by{
-
-margin-top:80px;
-
-text-align:center;
-
-}
-
-.trusted-by p{
-
-color:#7c8aa5;
-
-font-size:15px;
-
-margin-bottom:25px;
-
-letter-spacing:1px;
-
-}
-
-.brand-row{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:45px;
-
-}
-
-.brand-row span{
-
-font-size:18px;
-
-font-weight:700;
-
-color:#b8c4d9;
-
-opacity:.75;
-
-transition:.35s;
-
-}
-
-.brand-row span:hover{
-
-color:#00E5FF;
-
-opacity:1;
-
-transform:translateY(-4px);
-
-}
-/* ===============================
-   FLOATING ANIMATION
-================================= */
-
-@keyframes floatRobot{
-
-0%{
-transform:translateY(0px);
-}
-
-50%{
-transform:translateY(-20px);
-}
-
-100%{
-transform:translateY(0px);
-}
-
-}
-
-.hero-right img{
-
-animation:floatRobot 5s ease-in-out infinite;
-
-filter:drop-shadow(0 0 50px rgba(0,229,255,.45));
-
-}
-
-/* Floating Cards */
-
-@keyframes floatingCard{
-
-0%{
-transform:translateY(0px);
-}
-
-50%{
-transform:translateY(-10px);
-}
-
-100%{
-transform:translateY(0px);
-}
-
-}
-
-.floating{
-
-animation:floatingCard 3s ease-in-out infinite;
-
-box-shadow:0 15px 35px rgba(0,0,0,.25);
-
-}
-
-.card-two{
-
-animation-delay:1s;
-
-}
-
-.card-three{
-
-animation-delay:2s;
-
-}
-/* ===============================
-   AURORA
-================================= */
-
-@keyframes aurora{
-
-0%{
-
-transform:translateX(-5%) translateY(-5%) scale(1);
-
-}
-
-50%{
-
-transform:translateX(5%) translateY(5%) scale(1.15);
-
-}
-
-100%{
-
-transform:translateX(-5%) translateY(-5%) scale(1);
-
-}
-
-}
-
-.hero-aurora{
-
-animation:aurora 12s ease-in-out infinite;
-
-filter:blur(40px);
-
-opacity:.8;
+margin:auto;
 
 }
