@@ -18,6 +18,13 @@
 --container:1280px;
 
 }
+.container{
+
+width:min(92%,1280px);
+
+margin:auto;
+
+}
 *{
 margin:0;
 padding:0;
