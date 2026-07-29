@@ -309,3 +309,68 @@ opacity:1;
 transform:translateY(-4px);
 
 }
+/* ===============================
+   FLOATING ANIMATION
+================================= */
+
+@keyframes floatRobot{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.hero-right img{
+
+animation:floatRobot 5s ease-in-out infinite;
+
+filter:drop-shadow(0 0 50px rgba(0,229,255,.45));
+
+}
+
+/* Floating Cards */
+
+@keyframes floatingCard{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.floating{
+
+animation:floatingCard 3s ease-in-out infinite;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.card-two{
+
+animation-delay:1s;
+
+}
+
+.card-three{
+
+animation-delay:2s;
+
+}
