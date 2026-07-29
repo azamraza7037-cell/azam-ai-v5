@@ -457,3 +457,40 @@ transform:translateY(0);
 animation:float 5s ease-in-out infinite;
 
 }
+@keyframes pulseGlow{
+
+0%{
+
+box-shadow:
+
+0 0 60px rgba(0,229,255,.20);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 140px rgba(0,229,255,.45);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 60px rgba(0,229,255,.20);
+
+}
+
+}
+
+.robot-circle{
+
+animation:
+
+float 5s ease-in-out infinite,
+
+pulseGlow 4s ease-in-out infinite;
+
+}
