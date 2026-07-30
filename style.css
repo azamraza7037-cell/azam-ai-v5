@@ -2445,6 +2445,6 @@ opacity:.9;
 .reveal-left,
 .reveal-right,
 .scale-up{
-    opacity:1 !important;
-    transform:none !important;
+    opacity: 1 !important;
+    transform: none !important;
 }
