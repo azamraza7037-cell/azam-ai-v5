@@ -2441,3 +2441,10 @@ transition:opacity .3s;
 opacity:.9;
 
 }
+.reveal,
+.reveal-left,
+.reveal-right,
+.scale-up{
+    opacity:1 !important;
+    transform:none !important;
+}
